@@ -42,9 +42,12 @@ function onClick(e) {
     window.addEventListener('keydown', (e) => { 
        if (e.key === "Escape") {
     instance.close();
-  }
+    window.addEventListener('click', (e) => { 
+     instance.close();
     });
-  }}
-  
+  }});
+
+}}
 }
+  
 doFirstTask();
